@@ -1,12 +1,11 @@
 use std::{
     collections::{HashMap, HashSet},
     io::{self, stdout, Stdout, Write},
-    ops::RangeInclusive,
     time::Instant,
 };
 
 use crossterm::{
-    cursor::{MoveToColumn, MoveToNextLine, MoveToPreviousLine},
+    cursor::{MoveToNextLine, MoveToPreviousLine},
     event::{read, Event, KeyCode, KeyEventKind},
     execute, queue,
     style::{Color, Print, SetBackgroundColor, SetForegroundColor},
